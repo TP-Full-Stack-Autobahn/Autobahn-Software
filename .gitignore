@@ -1,0 +1,10 @@
+
+# production
+node_modules
+dist
+.yalc
+yalc.lock
+
+
+# env file
+.env

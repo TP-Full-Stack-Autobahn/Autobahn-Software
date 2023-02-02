@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.signin-form {
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+
+  h1 {
+    margin: 10px 0;
+  }
+
+  .input-container {
+    margin-bottom: 30px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .error {
+    margin: 5px 0;
+    color: $primary;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../styles/breakpoints";
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  @include breakpoint-md {
+    padding: 20px 80px;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+}

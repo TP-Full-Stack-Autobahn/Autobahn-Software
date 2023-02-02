@@ -1,0 +1,11 @@
+@import "../../styles/breakpoints";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+@mixin breakpoint-sm {
+  @media screen and (min-width: 468px) {
+    @content;
+  }
+}
+@mixin breakpoint-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin breakpoint-lg {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin breakpoint-xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin breakpoint-xxl {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}

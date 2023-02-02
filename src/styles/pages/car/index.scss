@@ -1,0 +1,97 @@
+@import "../../variables";
+@import "../../breakpoints";
+
+.cars-container {
+    //Global
+    padding: 10px 20px 40px 20px;
+    @include breakpoint-xl {
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: calc(50% - #{1200px} / 2);
+        padding-right: calc(50% - #{1200px} / 2);
+    }
+
+
+    article {
+        .content {
+            .price {
+                font-weight: lighter;
+                .price-number {
+                    font-weight: bold;
+                    color: #C00000;
+                }
+            }
+        }
+    }
+
+    //Listing
+    .cars-list-container {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        article {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            transition: all 0.3s;
+            border-radius: 10px;
+            height: max-content;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.03);
+            } 
+
+            .head {
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    border-radius: 10px 10px 0 0;
+                }
+            }
+
+            .content {
+                padding: 7px 14px 15px 14px;
+                display: flex;
+                justify-content: space-between;
+                .name {
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+
+    //Show
+    .navigate-back {
+        .label {
+            text-decoration: underline;
+            font-weight: unset;
+        }
+    }
+
+    .cars-show-container {
+        article {
+            margin: auto;
+            width: 100%;
+
+            @media (min-width: 768px) {
+                max-width: 70%;
+            }
+            .head {
+                margin-bottom: 30px;
+                h1 {
+                    font-size: 36px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }   
+    }
+}

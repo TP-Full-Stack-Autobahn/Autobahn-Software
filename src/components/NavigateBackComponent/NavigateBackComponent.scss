@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.navigate-back {
+  font-weight: bold;
+  user-select: none;
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &::first-letter {
+    color: $primary;
+  }
+}
